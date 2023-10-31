@@ -36,8 +36,8 @@ git clone https://github.com/gpakosz/.tmux.git
 ln -s -f .tmux/.tmux.conf
 
 # github profile
-git config --global user.email "adieujw@gmail.com"
-git config --global user.name "monologg"
+git config --global user.email "lsjg9909@naver.colm"
+git config --global user.name "girinman"
 
 # For save hugginface hub credential
 git config --global credential.helper store
