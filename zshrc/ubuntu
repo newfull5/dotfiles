@@ -7,8 +7,6 @@ export ZSH="/home/${USER}/.oh-my-zsh"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="spaceship"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -112,8 +110,8 @@ export PYTHONIOENCODING=UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Personal NAS
-export NAS_URL=""
-alias nas='aws --endpoint-url $NAS_URL --region ap-northeast-2 s3'
+# BHSN Minio(NAS)
+export NAS_URL="https://minio.bhsn.dev"
+alias bas='aws --endpoint-url $NAS_URL --region ap-northeast-2 s3'
 
-export PATH="/home/${USER}/.local/bin:$PATH"
+eval "$(starship init zsh)"
